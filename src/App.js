@@ -9,8 +9,8 @@ function App() {
         <div>
             {/* //localhost:3000 
             //my-page.com/ */}
+            <MainNavigation />
             <Switch>
-                <MainNavigation />
                 <Route path="/" exact>
                     <AllMeetupsPage />
                 </Route>
