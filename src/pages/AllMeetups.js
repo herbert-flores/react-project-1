@@ -17,7 +17,15 @@ const DUMMY_DATA = [
     },
 ];
 function AllMeetupsPage() {
-    return <div>All Meetups Page</div>;
+    return (
+        <section>
+            <ul>
+                {DUMMY_DATA.map((meetup) => {
+                    return <li key={meetup.id}>{meetup.title}</li>;
+                })}
+            </ul>
+        </section>
+    );
 }
 
 export default AllMeetupsPage;
